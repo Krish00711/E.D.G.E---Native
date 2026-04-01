@@ -49,3 +49,8 @@ mongo_data/
 *.tsbuildinfo
 
 ml_service/venv/
+
+# Required ML service artifacts (must be versioned for Render deploy)
+!ml_service/models/burnout_model.pkl
+!ml_service/models/scaler.pkl
+!ml_service/models/label_encoder.pkl
