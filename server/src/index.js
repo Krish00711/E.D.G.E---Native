@@ -83,6 +83,15 @@ app.use(express.json())
 app.use(sanitizeInput)
 app.use(apiLimiter)
 
+app.get('/', (req, res) => {
+  return res.json({
+    service: 'edge-backend',
+    version: '1.0.0',
+    status: 'running',
+    health: '/api/health'
+  })
+})
+
 app.use('/api/health', healthRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/students', studentsRoutes)
