@@ -4,7 +4,6 @@
 .env.*.local
 .env.production.local
 .env.test.local
-venv
 
 # Logs
 logs
@@ -48,3 +47,5 @@ mongo_data/
 
 # Build
 *.tsbuildinfo
+
+ml_service/venv/
