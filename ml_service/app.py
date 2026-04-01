@@ -58,6 +58,16 @@ def _load_artifacts():
 _load_artifacts()
 
 
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({
+        'service': 'edge-ml',
+        'status': 'ok' if not load_error else 'error',
+        'health': '/health',
+        'predict': '/predict'
+    }), 200
+
+
 @app.route('/health', methods=['GET'])
 def health():
     if load_error:
