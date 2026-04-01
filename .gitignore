@@ -1,0 +1,49 @@
+# Environment variables (CRITICAL - NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.test.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Secrets & Credentials
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# Database & ML
+*.pkl
+*.joblib
+models/trained/
+data/private/
+mongo_data/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build
+*.tsbuildinfo

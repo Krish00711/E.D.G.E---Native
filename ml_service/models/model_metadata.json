@@ -1,0 +1,42 @@
+{
+  "version": "3.0_real_data_ensemble",
+  "trained_date": "2026-03-23T12:41:10.842255",
+  "model_type": "VotingClassifier(RandomForest + XGBoost)",
+  "n_samples": 1000000,
+  "n_features": 24,
+  "feature_names": [
+    "session_duration",
+    "quiz_scores",
+    "load_score",
+    "activity_frequency",
+    "sleep_hours",
+    "stress_score",
+    "submission_lateness",
+    "gpa",
+    "attendance_rate",
+    "assignment_completion_rate",
+    "grade_trend",
+    "days_since_last_activity",
+    "screen_time_hours",
+    "social_media_hours",
+    "physical_activity_hours",
+    "anxiety_score",
+    "mood_score",
+    "social_interaction_hours",
+    "academic_pressure_score",
+    "extracurricular_load",
+    "placement_pressure",
+    "peer_stress",
+    "sleep_quality",
+    "financial_stress"
+  ],
+  "classes": [
+    "high",
+    "low",
+    "moderate"
+  ],
+  "test_accuracy": 0.892,
+  "weighted_f1": 0.8989,
+  "cv_mean": 0.9223,
+  "cv_std": 0.0008
+}
