@@ -523,7 +523,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## 👤 Author
 
 **Krish Sharma**
-
+**Lalitya Dodla**
 Built with obsessive attention to detail, real machine learning, and genuine care for student wellbeing.
 
 ---
